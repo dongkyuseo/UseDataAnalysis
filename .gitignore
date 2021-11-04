@@ -24,6 +24,7 @@ data/
 강의 공부자료/
 따릉이/
 wandb/
+keys/
 
 # C extensions
 *.so
