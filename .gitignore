@@ -25,6 +25,7 @@ data/
 따릉이/
 wandb/
 keys/
+fastapi/
 
 # C extensions
 *.so
