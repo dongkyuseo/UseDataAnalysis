@@ -1,4 +1,4 @@
-def weather(day, area1):
+def weather(day, area):
     import pandas as pd
     import os
     from datetime import datetime, timedelta
@@ -18,15 +18,15 @@ def weather(day, area1):
 
     # 날짜 지정
     startDt = day
-    si = area1
+    si = area
     # 지역 코드 선택
 
     for i in range(len(ac['지점명'])):
         sa = Series(si)
         if sa.str.contains(ac['지점명'][i])[0] == True:
-            area = ac['지점'][i]
+            area2 = ac['지점'][i]
 
-    stnIds = area
+    stnIds = area2
     url = 'http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList'
     params ={'serviceKey' : api_key, 'pageNo' : '1', 'numOfRows' : '10', 'dataType' : 'json', 'dataCd' : 'ASOS', 'dateCd' : 'DAY', 'startDt' : startDt, 'endDt' : startDt, 'stnIds' : stnIds }
 
