@@ -28,7 +28,7 @@ keys/
 fastapi/
 크롤링/
 gpt/
-test/
+
 # C extensions
 *.so
 
